@@ -3,7 +3,31 @@ $(document).ready(function () {
         items: 3,
         autoplay: true,
         loop: true,
+        margin: 10,
         lazyload: true,
+        animateOut: 'fadeOut',
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 1,
+            },
+            1000: {
+                items: 1,
+            }
+        }
+    });
+});
+$(document).ready(function () {
+    $('#slider2').owlCarousel({
+        items: 3,
+        autoplay: true,
+        loop: true,
+        margin: 10,
+        lazyload: true,
+        animateOut: 'fadeOut',
         nav: true,
         responsive: {
             0: {
@@ -11,11 +35,9 @@ $(document).ready(function () {
             },
             768: {
                 items: 3,
-                margin: 10
             },
             1000: {
-                items: 4,
-                margin: 10
+                items: 3,
             }
         }
     });
